@@ -12,8 +12,10 @@ import { useRouter } from "next/router";
 import io from "socket.io-client";
 
 const socketHost = process.env.NEXT_PUBLIC_BACKEND_SOCKET_SERVER_HOST;
+const backendHost = process.env.NEXT_PUBLIC_BACKEND_HOST;
 
-const socket = io.connect(socketHost);
+const socket = io.connect(backendHost);
+// const socket = io.connect(socketHost);
 
 // console.log();
 

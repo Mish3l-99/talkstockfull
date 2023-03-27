@@ -6,7 +6,7 @@ var express = require("express");
 var cors = require("cors");
 var app = express();
 // This is to enable CORS for one origin
-app.use(cors({ origin: OriginAllowed }));
+app.use(cors());
 
 var http = require("http").createServer(app);
 // http.use(cors({ origin: OriginAllowed }));
